@@ -1,5 +1,5 @@
+![Clone_Instagram](https://user-images.githubusercontent.com/53495349/166309984-bbdda188-c81e-4fe0-88d8-369267ebc51d.jpg)
 
-![AdegaDosAmigos](https://user-images.githubusercontent.com/53495349/166309637-678a8bfb-2bbd-4a28-bf40-cd3017a80228.jpg)
 
 # Getting Started with Create React App
 
