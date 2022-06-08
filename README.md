@@ -1,3 +1,6 @@
+![Clone_Instagram](https://user-images.githubusercontent.com/53495349/166309984-bbdda188-c81e-4fe0-88d8-369267ebc51d.jpg)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
