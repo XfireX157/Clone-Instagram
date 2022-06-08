@@ -25,13 +25,13 @@ export const Search = styled.div`
 
     label{
         display: flex;
-        align-center: center;
+        align-items: center;
         justify-content: center;
 
         input{
             font-family: Montserrat;
             background-color: ${FundoPesquisa};
-            text-decorantion: none;
+            text-decoration: none;
             color: ${CorPesquisa};
             border: 0 none;
             outline: 0;

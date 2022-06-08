@@ -13,7 +13,7 @@ export const Section = styled.section`
     width: 90%;
     height: auto;
     margin: auto;
-    background-color: ${({ theme }) => theme.inside}
+    background-color: ${({ theme }) => theme.inside};
 `
 
 export const BoxCard = styled.article`
@@ -56,7 +56,7 @@ export const Txt = styled.span`
     cursor: pointer;
     padding-bottom: ${(props) => props.primary ? "7px" : "0"};
     font-size: ${(props) => props.primary ? "0.9rem" : "0.7rem"};
-    font-weight: ${(props) => props.primary ? "700" : "400"}
+    font-weight: ${(props) => props.primary ? "700" : "400"};
 `
 
 export const ImgCard = styled.img`
@@ -130,7 +130,23 @@ export const TextoHora = styled.div`
     p{
         font-family: Montserrat;
         color: #ADABAB;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
+    }
+`
+
+export const Curtidas = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+
+    p{  
+        font-size: 1rem;
+        padding: 0 5px;
+    }
+
+    span{
+        font-weight: 600;
     }
 `
 
@@ -156,7 +172,7 @@ export const FormComent = styled.form`
     }
 
     a{
-        font-size: ;
+        font-size: 1rem;
         color: #21ABCD;
         font-family: Montserrat;
     }

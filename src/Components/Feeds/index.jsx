@@ -17,9 +17,9 @@ import { Grid } from "./style";
 import { CardComent } from "./style";
 import { TextoHora } from './style'
 import { FormComent } from './style'
+import { Curtidas } from './style'
 
 //icones
-import { GiPlainCircle } from 'react-icons/gi'
 import { IoIosMore } from 'react-icons/io'
 import { BsHeart } from 'react-icons/bs'
 import { BsChat } from 'react-icons/bs'
@@ -62,7 +62,15 @@ export function Feed(props) {
                                 </div>
                             </IconesCard>
 
+
+
                             <TextoHora>
+                                <Curtidas>
+                                    <p>Curtido por</p>
+                                    <span>{props.curtidoPor}</span>
+                                    <p>e</p>
+                                    <span>outras pessoas</span>
+                                </Curtidas>
                                 <p>HÁ 2 HORAS</p>
                             </TextoHora>
 

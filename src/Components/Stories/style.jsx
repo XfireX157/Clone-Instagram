@@ -5,9 +5,42 @@ export const Principal = styled.main`
     width: 100%;
     height: auto;
     box-sizing: border-box;
+
+
+    .left-arrow{
+        position: absolute;
+        top: 35%;
+        left: 7%;
+        font-size: 2rem;
+        color: #ccc;
+       
+        cursor: pointer;
+        user-select: none;
+         &:hover{
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
+
+    .right-arrow{
+        position: absolute;
+        top: 35%;
+        right: 7%;
+        font-size: 2rem;
+        color: #ccc;
+        cursor: pointer;
+        user-select: none;
+        &:hover{
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 20px;
+        }
+    }
 `
 
 export const Cards = styled.section`
+    position: relative;
     width: 90%;
     height: 100%;
     margin: auto;
@@ -20,10 +53,13 @@ export const Cards = styled.section`
     padding: 15px;
     overflow: hidden;
     overflow-x: scroll;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar{
         height: 0px;
     }
+
+    
 `
 
 export const Card = styled.div`

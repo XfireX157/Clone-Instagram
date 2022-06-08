@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardPerfil = styled.div`
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: auto;
     margin-top: 90px;
@@ -11,12 +11,10 @@ export const Perfil = styled.div`
     width: 100%;
     display: flex;
     margin: auto;
-    justify-content: ${(props) => props.primary ? "space-between" : "space-around"};
+    justify-content: space-between;
     align-items: center;
     margin-top: ${(props) => props.primary ? "20px" : "15px"};
     margin-bottom: ${(props) => props.primary ? "20px" : "15px"};
-    padding: ${(props) => props.primary ? "10px" : "0"}
-    
 `
 
 export const PerfilName = styled.div`
@@ -25,11 +23,21 @@ export const PerfilName = styled.div`
 `
 
 export const Icon = styled.div`
-    font-size: ${(props) => props.primary ? "4rem" : "2.50rem"};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    
+    font-size: ${(props) => props.primary ? "3rem" : "2.50rem"};
     color: #ccc;
 
+    i{
+        margin-right: 25px;
+    }
+
     img{
-        width: 50px;
+        margin-right: 40px;
+        width: 40px;
         object-fit: cover;
         border-radius: 100px;
     }
@@ -38,12 +46,8 @@ export const Icon = styled.div`
 export const Txt = styled.span`
     font-family: Montserrat;
     font-size: ${(props) => props.primary ? "0.9rem" : "0.8rem"};
-    padding-bottom ${(props) => props.primary ? "8px" : "0"};
+    padding-bottom: ${(props) => props.primary ? "8px" : "0"};
     font-weight: ${(props) => props.primary ? "700" : "400"};
-
-    &:hover{
-        
-    }
 `
 
 export const Link = styled.a`
@@ -76,7 +80,5 @@ export const Ajuda = styled.div`
             font-weight: 600;
             color: #ccc;
         }
-    }
-
-    
+    }   
 `

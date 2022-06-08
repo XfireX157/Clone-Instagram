@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import { Stories } from '../Stories'
+import { Cards } from '../Stories/style'
+
 import { Feed } from '../Feeds/index'
 import { CardRight } from '../Card/index'
 import { ContainerGlobal, ContainerPrincipal, ContainerConfigPerfil } from './style'
@@ -15,6 +17,8 @@ import Academy from '../../assets/img/Academy.jpg'
 import BernadoPerfil from '../../assets/img/BernadoPerfil.jpg'
 import ProaPerfil from '../../assets/img/Proa.jpg'
 
+
+
 export function Container() {
 
     const [tema, setTema] = useState(true)
@@ -28,10 +32,10 @@ export function Container() {
             <ThemeProvider theme={tema ? TemaClaro : TemaEscuro}>
                 <ContainerGlobal>
                     <ContainerPrincipal>
-                        <Stories />
-                        <Feed img={Arte} perfil={Academy} username={'academy_of.art'} />
-                        <Feed img={Bernado} perfil={BernadoPerfil} username={'bernardobarroso_'} />
-                        <Feed img={ProaImg} perfil={ProaPerfil} username={'instituto.proa'} />
+                        <Stories slides={Cards} />
+                        <Feed img={Arte} perfil={Academy} username={'academy_of.art'} curtidoPor={'angelikazi1948'} />
+                        <Feed img={Bernado} perfil={BernadoPerfil} username={'bernardobarroso_'} curtidoPor={' hoordraws'} />
+                        <Feed img={ProaImg} perfil={ProaPerfil} username={'instituto.proa'} curtidoPor={' maithlani_'} />
                     </ContainerPrincipal>
                     <ContainerConfigPerfil>
                         <CardRight />
